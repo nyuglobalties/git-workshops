@@ -4,8 +4,15 @@ output:
   xaringan::moon_reader:
     css: 'xaringan-themer.css'
     seal: false
+    nature:
+      countIncrementalSlides: false
+      highlightLines: true
+      highlightStyle: solarized-light
+      navigation:
+        scroll: false
 params:
   theme: NULL
+  home: https://nyuglobalties.github.io/git-workshops
 ---
 class: center, inverse, middle, title-slide
 
@@ -16,5 +23,85 @@ class: center, inverse, middle, title-slide
 ### Patrick Anker
 
 .ties-footer[
-  ![Global TIES for Children](ties-lockup-short-white.png)
+
+![Global TIES for Children](images/ties-lockup-short-white.png)
+
 ]
+
+---
+class: middle, center
+
+## Before we begin..
+
+If you'd like to download any of the materials for this presentation, check out
+
+**>> [the workshop's website](`r params$home`)<<**
+
+### `r "\U1F680"`
+
+---
+class: middle, center, inverse
+
+# Motivation
+
+## `r "\U1F914"`
+
+---
+
+# Have you ever had this problem?
+
+```
+folder/
+  report_final.docx
+  report_final_CTD.docx
+  report_final_v2.docx
+  report_final_v2-approved_CTD.docx
+  report_final_v3_20211110.docx
+  report_final_v3-20211110_approved-for-real.docx
+```
+
+.center[
+
+# `r "\U1F629"`
+
+]
+
+Too often we get trapped in the "final_final_v#" problem when collaborating that .red[we don't know which file is the _actual_ final one].
+
+**This is where version control comes in.**
+
+---
+
+.definition[
+
+## Version Control Systems
+
+> a class of systems responsible for managing changes to computer programs, documents, large web sites, or other collections of information.
+
+]
+
+.pull-left[
+
+**.red[Box]** implements a **centralized scheme**: there is only .red[one source of truth] and .red[one history for each file]. 
+
+When working on your own with one file, this is generally okay, but when you start collaborating on the same file, you might end up with the situation on the right.
+
+]
+
+.pull-right.font12[
+
+```
+# on Box
+
+folder/
+  document.docx
+  document (some.person@email.com).docx
+```
+
+]
+
+---
+class: middle, center
+
+# Wouldn't it be nice if we could just have
+# .red[one file]?
