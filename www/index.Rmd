@@ -1,0 +1,5 @@
+---
+title: "Welcome!"
+---
+
+Welcome to **Let's Write a Paper**, a collaborative workshop series about using **`git`** and [**GitHub**](https://github.com) for paper writing and other non-code uses!

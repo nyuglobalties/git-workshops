@@ -3,8 +3,10 @@
 .RData
 .Ruserdata
 .Renviron
-docs
 
 xaringan-themer.css
+
+_targets
+_site
 
 **/*.afdesign

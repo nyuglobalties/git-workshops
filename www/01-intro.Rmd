@@ -1,0 +1,20 @@
+---
+title: Let's Write a Paper!
+output:
+  xaringan::moon_reader:
+    css: 'xaringan-themer.css'
+    seal: false
+params:
+  theme: NULL
+---
+class: center, inverse, middle, title-slide
+
+# Let's Write a Paper!
+
+## Part I - Introduction
+
+### Patrick Anker
+
+.ties-footer[
+  ![Global TIES for Children](ties-lockup-short-white.png)
+]
