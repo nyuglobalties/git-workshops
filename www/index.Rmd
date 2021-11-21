@@ -2,4 +2,18 @@
 title: "Welcome!"
 ---
 
-Welcome to **Let's Write a Paper**, a collaborative workshop series about using **`git`** and [**GitHub**](https://github.com) for paper writing and other non-code uses!
+> Welcome to **Let's Write a Paper**, a collaborative workshop series about using **`git`** and [**GitHub**](https://github.com) for paper writing and other non-code uses! We'll go over git, GitHub, common workflows, and ultimately how you could write your papers (and other documents) using these tools. No coding experience expected!
+
+This series of workshops is inspired by the amazing [**Git and GitHub for Poets**](https://thecodingtrain.com/beginners/git-and-github/) series by The Coding Train ([Prof. Daniel Shiffman](https://tisch.nyu.edu/about/directory/itp/1984778605) of NYU Tisch ITP). Rather than working on poems, we'll write a (fake) paper together -- leveraging the powers of git and GitHub.
+
+## Setup
+
+While installation is required ahead of time (we'll go through it together), here's a list of software that we will use throughout the series:
+
+- [Sourcetree](https://www.sourcetreeapp.com/): A GUI interface to git
+- [Visual Studio Code](https://code.visualstudio.com/): An extremely versatile text editor
+
+Later in the series, we will use these:
+
+- [RStudio](https://www.rstudio.com/products/rstudio/download/): Handy tool to write documents in a versionable way
+- [Zotero](https://www.zotero.org/): Everyone's favorite citation manager!
