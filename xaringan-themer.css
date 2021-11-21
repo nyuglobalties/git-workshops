@@ -60,6 +60,8 @@
   --base: #1f0536;
   --white: #FFFFFF;
   --black: #272822;
+  --red: #c50f3c;
+  --yellow: #ecaa00;
 }
 
 html {
@@ -259,6 +261,18 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .bg-black {
   background-color: var(--black);
 }
+.red {
+  color: var(--red);
+}
+.bg-red {
+  background-color: var(--red);
+}
+.yellow {
+  color: var(--yellow);
+}
+.bg-yellow {
+  background-color: var(--yellow);
+}
 
 
 
@@ -266,9 +280,29 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 :root {
   --header-h1-font-size: 3rem;
   --header-h2-font-size: 2rem;
+  --font12: 12pt;
+  --font10: 10pt;
 }
 h2, h3 {
   font-family: var(--text-font-family);
+}
+.font12 > table {
+  font-size: var(--font12);
+}
+.font12 > p {
+  font-size: var(--font12);
+}
+.font12 > pre .remark-code-line {
+  font-size: var(--font12);
+}
+.font10 > table {
+  font-size: var(--font10);
+}
+.font10 > p {
+  font-size: var(--font10);
+}
+.font10 > pre .remark-code-line {
+  font-size: var(--font10);
 }
 .ties-footer {
   position: fixed;
@@ -277,4 +311,9 @@ h2, h3 {
 }
 .ties-footer p img {
   width: 30%;
+}
+.definition {
+  background-color: #bde9fd;
+  padding: 5px 15px;
+  border: 1px solid;
 }
