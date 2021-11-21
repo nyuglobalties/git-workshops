@@ -8,7 +8,7 @@ This series of workshops is inspired by the amazing [**Git and GitHub for Poets*
 
 ## Setup
 
-While installation is required ahead of time (we'll go through it together), here's a list of software that we will use throughout the series:
+While no installation is required ahead of time (we'll go through it together), here's a list of software that we will use throughout the series:
 
 - [Sourcetree](https://www.sourcetreeapp.com/): A GUI interface to git
 - [Visual Studio Code](https://code.visualstudio.com/): An extremely versatile text editor
