@@ -60,7 +60,7 @@ rlang::list2(
           ),
           ".definition" = list(
             "background-color" = "#bde9fd",
-            padding = "5px 15px",
+            padding = "1%",
             border = "1px solid"
           )
         )

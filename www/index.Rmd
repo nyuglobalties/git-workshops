@@ -8,7 +8,9 @@ This series of workshops is inspired by the amazing [**Git and GitHub for Poets*
 
 ## Setup
 
-While no installation is required ahead of time (we'll go through it together), here's a list of software that we will use throughout the series:
+If you don't already have one, [please create a GitHub account](https://github.com/signup) (preferably with your NYU email, but it's not a requirement).
+
+While no software installation is required ahead of time (we'll go through it together), here's a list of software that we will use throughout the series:
 
 - [Sourcetree](https://www.sourcetreeapp.com/): A GUI interface to git
 - [Visual Studio Code](https://code.visualstudio.com/): An extremely versatile text editor

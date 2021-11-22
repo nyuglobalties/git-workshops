@@ -12,7 +12,7 @@ output:
         scroll: false
 params:
   theme: NULL
-  home: https://nyuglobalties.github.io/git-workshops
+  home: index.html
 ---
 class: center, inverse, middle, title-slide
 
@@ -31,11 +31,11 @@ class: center, inverse, middle, title-slide
 ---
 class: middle, center
 
-## Before we begin..
+## Before we begin...
 
 If you'd like to download any of the materials for this presentation, check out
 
-**>> [the workshop's website](`r params$home`)<<**
+**>> [the workshop's website](`r params$home`) <<**
 
 ### `r "\U1F680"`
 
@@ -105,3 +105,72 @@ class: middle, center
 
 # Wouldn't it be nice if we could just have
 # .red[one file]?
+
+---
+class: middle, center, inverse
+
+# Enter
+
+## .yellow[git] & .yellow[GitHub]
+
+---
+
+# What are .red[git] & .red[GitHub]?
+
+.pull-left.definition[
+
+## git
+
+> A _decentralized_ version control system designed with collaboration in mind, allowing for projects to have multiple histories.
+
+]
+
+.pull-right.definition[
+
+## GitHub
+
+> A web service that acts as a git project host, project management suite, and web host<sup>1</sup>.
+
+]
+
+<br />
+
+You could work entirely with git and never use GitHub, and vice versa. There are many git project hosts out there ([**GitLab**](https://about.gitlab.com/), [**Bitbucket**](https://bitbucket.org/), and more); we will focus on GitHub because it is _incredibly_ popular and user-friendly.
+
+.footnote.font10[
+
+<sup>1</sup>These slides are hosted on GitHub!
+
+]
+
+---
+class: center, middle
+
+# We'll first start with a tour of [.red[GitHub]](https://github.com)
+
+???
+
+Show dashboard view of GitHub, and then point to the "Repositories" list. At that point, move to next slide to show "Repository" definition.
+
+---
+class: middle
+
+.definition[
+
+## Repository (_"repo"_)
+
+> A git project
+
+]
+
+---
+class: center, middle
+
+# Back to the tour...
+
+???
+
+- Show example repository (dt-handbook)
+- Show nyuglobalties org page
+- Show psanker profile (pinned, activity heatmap)
+- Create new repo "git workshop paper" and show the autocomplete to hyphens; add README
