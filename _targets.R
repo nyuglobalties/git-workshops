@@ -14,7 +14,7 @@ rlang::list2(
       style_mono_accent(
         base_color = "#1f0536",
         header_font_google = google_font("Cookie"),
-        text_font_google   = google_font("Montserrat", "300 ", "300i"),
+        text_font_google   = google_font("Montserrat", "300", "300i"),
         code_font_google   = google_font("Fira Mono"),
         colors = c(
           red = "#c50f3c",
