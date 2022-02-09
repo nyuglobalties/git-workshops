@@ -171,6 +171,149 @@ class: center, middle
 ???
 
 - Show example repository (dt-handbook)
+- Highlight commits
+
+---
+class: middle
+
+.definition[
+
+## Commit
+
+> A snapshot of your repository's history. The entire history of commits is called the **commit log**.
+
+]
+
+--
+
+.definition[
+
+## Diff
+
+> A comparison of two commits -- showing the linewise changes between them.
+
+]
+
+???
+
+- Step back through commit log to show different state
+- Show diff and reveal next part of slide 
+- Show that the most recent commit is in the file link
+
+---
+class: middle, center
+
+# Continuing...
+
+???
+
 - Show nyuglobalties org page
-- Show psanker profile (pinned, activity heatmap)
-- Create new repo "git workshop paper" and show the autocomplete to hyphens; add README
+- Show blueprintr and begin discussion of branches
+
+---
+
+# Branching
+
+Branching is **the** core component that makes a git project "distributed". 
+
+.pull-left[
+
+- Each branch contains its own history
+- Branches can be spawned from any parent branch
+- Branches can be **merged** into each other to combine histories (necessary for collaboration!)
+
+]
+
+.pull-right[
+
+![blueprintr branch graph](images/blueprintr-graph.png)
+
+]
+
+Branches can either be **local** (on your machine) or **remote** (on someone else's machine). 
+
+**.red[There is no inherent "central" branch]**, but often those are created out of convention.
+
+---
+class: middle, center
+
+# Let's create a project!
+
+???
+
+- Create new repo "git workshop paper" in "nyuglobalties" and show the autocomplete to hyphens; add README
+- Add "This is our **collaborative** paper repo!" as a commit. Demonstrate Markdown syntax.
+- Fork to `psanker`
+
+---
+class: middle
+
+.definition[
+
+## Fork
+
+A process that copies an entire Github project from account `A` to account `B`. Often used in open-source software development setups.
+
+]
+
+---
+class: inverse, center, middle
+
+# Collaboration Time!
+
+## Let's all make .yellow[forks] of the .yellow["nyuglobalties/git-workshop-paper"] project
+
+???
+
+Help people with forking
+
+---
+
+# Workflow Tips
+
+In a collaborative setting, people generally .red[create new branches] for their own work .red[whenever they change things]. This applies to your own forks as well. We'll talk about branch naming conventions later.
+
+**For now, I will create a branch for my new changes**.
+
+???
+
+- Create a new branch called "new-section-patrick"
+- Add a new section, like, "`# Patrick's section`" with some flavor text.
+
+---
+class: middle, center, inverse
+
+# Collaboration Time!
+
+## Create your own sections on .yellow[your own branches] on .yellow[your new forks]!
+
+---
+
+# Merging & Pull Requests
+
+Now that we have work on our own branches and forks, **how do we get it back into the main project?**
+
+This is where **.red[Pull Requests]** come in.
+
+.definition[
+
+# Pull Request
+
+A feature on Github that signals your intention to **merge** two branches (generally your own branch into some "main" branch). It provides a conversation interface to discuss your changes with other reviewers, request changes, even test code prior to merging.
+
+]
+
+???
+
+- Create PR from my branch to main repo
+- Walk through interface
+- Provide review, request changes
+- Submit new changes, talk about how PRs don't need to be reopened for each commit
+- Merge PR
+
+---
+class: middle, center, inverse
+
+# Collaboration Time!
+
+## Create your own .yellow[pull requests] to the .yellow['main' branch] on the .yellow[TIES repository]!

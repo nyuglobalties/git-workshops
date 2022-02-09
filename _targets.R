@@ -3,6 +3,9 @@ for (script in list.files(here::here("R"), full.names = TRUE)) {
   source(script)
 }
 
+# Track languageserver?
+languageserver::run
+
 library(targets)
 library(tarchetypes)
 library(xaringanthemer)
@@ -14,8 +17,8 @@ rlang::list2(
       style_mono_accent(
         base_color = "#1f0536",
         header_font_google = google_font("Cookie"),
-        text_font_google   = google_font("Montserrat", "300", "300i", "500", "500i", "600", "600i"), # nolint
-        code_font_google   = google_font("Fira Mono"),
+        text_font_google = google_font("Montserrat", "300", "300i", "500", "500i", "600", "600i"), # nolint
+        code_font_google = google_font("Fira Mono"),
         colors = c(
           red = "#c50f3c",
           yellow = "#ecaa00"
@@ -67,18 +70,15 @@ rlang::list2(
       )
     )
   ),
-
   tar_files_copy(
     move_theme,
     theme,
     here::here("www/xaringan-themer.css")
   ),
-
   tar_file(
     site_config,
     here::here("www/_site.yml")
   ),
-
   tar_target(
     site_deps,
     rlang::list2(
@@ -86,7 +86,6 @@ rlang::list2(
       site_config,
     )
   ),
-
   tar_target(
     build_site,
     {
