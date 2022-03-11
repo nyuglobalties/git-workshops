@@ -1,0 +1,120 @@
+---
+title: Let's Write a Paper!
+output:
+  xaringan::moon_reader:
+    css: 'xaringan-themer.css'
+    seal: false
+    nature:
+      countIncrementalSlides: false
+      highlightLines: true
+      highlightStyle: solarized-light
+      navigation:
+        scroll: false
+params:
+  theme: NULL
+  home: index.html
+---
+class: center, inverse, middle, title-slide
+
+# Let's Write a Paper!
+
+## Part II - git
+
+### Patrick Anker
+
+.ties-footer[
+
+![Global TIES for Children](images/ties-lockup-short-white.png)
+
+]
+
+---
+class: middle, center
+
+## Before we begin...
+
+If you'd like to download any of the materials for this presentation, check out
+
+**>> [the workshop's website](`r params$home`) <<**
+
+### `r "\U1F680"`
+
+---
+class: middle
+
+# Recap
+
+1. Introduction to git and Github software and their distinction
+1. Overview of Github platform and its use
+1. Overview of some basic git (and Github) terminology
+    1. Repositories ("repos")
+    1. Commits
+    1. Branches
+    1. Merges
+    1. Pull Requests
+
+---
+class: middle
+
+# Agenda
+
+1. Intro to using a terminal
+1. Using git in the terminal and with SourceTree
+
+---
+class: middle, center, inverse
+
+# Using a terminal
+
+## `r "\U1F5A5"`
+
+---
+
+# Moving Around
+
+Learning how to use a terminal shell is a whole workshop series on its own. I just want to showcase **basic file system operations**.
+
+- **`cd <dir>`**: Move to another folder ("Change directory")
+- **`pwd`**: show where you are currently located -- your _working directory_ ("Print working directory")
+- **`ls [-l, -a] [dir]`**: List the contents of your working directory _or_ of some other directory `dir`
+- **`cat <file>`**: Print the contents of a file to your terminal screen
+- **`mkdir [-p] <dir>`**: Creates a folder with path `dir` (`-p` signals if you'd like to recursively create folders if `dir` has multiple missing folders)
+- **`rm [-r, -f] <path>`**: Removes a `path` (recursively with `-r`)
+- **`mv <from> <to>`**: Move/rename a file/folder at `from` to `to`
+
+These seven commands will cover most of what you need to do outside of `git` in most cases.
+
+---
+class: middle, center
+
+# Loading up Terminal...
+
+???
+
+- Discuss how this is what a shell looks like on Mac and other UNIX-likes; for Windows, recommend the WSL or Git Bash
+- List the contents of ~ with just `cd` and `cd ~`
+- List with `ls -l` and `ls -la`; talk about `.` and `..`
+- Move around with `cd`; showcase utility of `cd ..` and `cd -` with `pwd` and TAB COMPLETION and dragging folders from Finder to a `cd` command
+- Go back to ~, create a folder, delete it
+- Create ~/worksapce and rename to ~/workspace with `mv`
+- `cd ~/workspace`
+
+---
+class: middle, inverse, center
+
+# Onto git...
+
+---
+
+# Working Locally
+
+Using Github as an editor is _okay_ if you're doing quick fixes, e.g. documentation improvements that just need a couple word changes. The downsides to working exclusively with Github are that:
+
+1. You have to have an internet connection at all times
+1. You cannot use any of the tools that you have on your computer
+
+This is clearly not ideal when you're writing papers and may need to regenerate figures, tables, etc.
+
+This is where **`git`** comes in. **.red[`git` is what you work with on _your_ computer].** 
+
+By default, `git` is a command line tool. However, I'll be showing you how to work with the command line interface _and_ an application called "SourceTree" that makes it easier to visualize what's going on.
