@@ -286,23 +286,11 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 h2, h3 {
   font-family: var(--text-font-family);
 }
-.font12 > table {
-  font-size: var(--font12);
+.font12 {
+  font-size: var(--font12) !important;
 }
-.font12 > p {
-  font-size: var(--font12);
-}
-.font12 > pre .remark-code-line {
-  font-size: var(--font12);
-}
-.font10 > table {
-  font-size: var(--font10);
-}
-.font10 > p {
-  font-size: var(--font10);
-}
-.font10 > pre .remark-code-line {
-  font-size: var(--font10);
+.font10 {
+  font-size: var(--font10) !important;
 }
 .ties-footer {
   position: fixed;
