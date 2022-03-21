@@ -35,23 +35,11 @@ rlang::list2(
           "h2, h3" = list(
             "font-family" = "var(--text-font-family)"
           ),
-          ".font12 > table" = list(
-            "font-size" = "var(--font12)"
+          ".font12" = list(
+            "font-size" = "var(--font12) !important"
           ),
-          ".font12 > p" = list(
-            "font-size" = "var(--font12)"
-          ),
-          ".font12 > pre .remark-code-line" = list(
-            "font-size" = "var(--font12)"
-          ),
-          ".font10 > table" = list(
-            "font-size" = "var(--font10)"
-          ),
-          ".font10 > p" = list(
-            "font-size" = "var(--font10)"
-          ),
-          ".font10 > pre .remark-code-line" = list(
-            "font-size" = "var(--font10)"
+          ".font10" = list(
+            "font-size" = "var(--font10) !important"
           ),
           ".ties-footer" = list(
             position = "fixed",

@@ -10,6 +10,8 @@ navbar:
       menu:
         - text: "Part I - Introduction"
           href: 01-intro.html
+        - text: "Part II - git"
+          href: 02-git.html
   right:
     - icon: fa-github fa-large
       href: https://github.com/nyuglobalties/git-workshops
