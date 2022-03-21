@@ -199,6 +199,8 @@ I'm now going to clone my fork of our paper's repository to my computer!
 
 # Checking on the state of your repo
 
+.pull-left[
+
 In order to know what things are in progress, there is the 
 
 ```sh
@@ -208,6 +210,28 @@ git status
 command on the command line.
 
 SourceTree's `git status` is essentially the "File status" view in "Workspace".
+
+]
+
+.pull-right[
+
+To see the history of your repository, there is the
+
+```git
+git log
+```
+
+command on the command line.
+
+SourceTree's "Branches" area acts as the git log.
+
+Note: if you're on command line and want to see a prettier log (like SourceTree's), I can help you set up a `git log` alias.
+
+]
+
+???
+
+- Remember to show off `git lg1` after reading the note
 
 ---
 class: inverse, middle, center
@@ -314,3 +338,180 @@ Want to know if a file is a binary? Look at it on the command line with `cat <fi
 Unfortunately, Word documents are actually binary files. Under the hood, DOCX and XLSX files are collections of XML files (which _are_ versionable with git since they are plain text) and folders that have been ZIP'd together. The file compression process makes MS Office files not versionable with git.
 
 ]
+
+---
+class: middle, inverse, center
+
+# .yellow[Activity!]
+
+## Let's all clone our own forks and add some commits to our own repos!
+
+---
+
+# Pushing and Pulling
+
+The final stage of the git workflow is to **push** your work to the remote repo (Github!). However, before you can push, you need to **pull** any changes from the remote into your local repo.
+
+.pull-left[
+
+.definition[
+
+## Push
+
+Sending new commits to a branch on a remote repository.
+
+]
+
+]
+
+.pull-right[
+
+.definition[
+
+## Pull
+
+Downloading (and sometimes merging) new commits from a branch on a remote repository.
+
+]
+
+]
+
+---
+
+# Pushing and Pulling
+
+.pull-left[
+
+![Staging & Repo Diagram](images/staging-repo-diagram.png)
+
+]
+
+.pull-right.font12[
+
+This is the general workflow:
+
+1. Create your commits
+1. `git pull` any changes
+1. Resolve conflicts (if necessary -- we'll get to this in our collaboration session)
+1. `git push` your commits plus any merging resolutions
+
+On SourceTree, all you need to do is click the Push and Pull buttons!
+
+Note: if you use the command line, you may get a bunch of yellow warning text with `git pull`. This is okay -- this is just telling you that going forward it is better to specify _which_ kind of pull you want to do. We generally want to do a "fast-forward" pull or "merge" pull. We'll talk about that in next session.
+
+]
+
+---
+class: middle, inverse, center
+
+# Branching
+
+## `r "\U1F333"`
+
+---
+
+# Branching
+
+The last thing that I want to cover today is how to do branching on your local git, as it's very important for collaborative settings. For this we'll need one of the weirder git terms: **checkout**. 
+
+.definition[
+
+## Checkout
+
+Switch your working directory's files to some target commit, branch, or (more generally) reference in your git history.
+
+]
+
+---
+
+# Branching
+
+.pull-left.font12[
+
+Creating a new branch is done with
+
+```sh
+git branch <branch name>
+# OR
+git checkout -b <branch name>
+```
+
+with the command line interface.
+
+With SourceTree, you need to click the "Branch button" and then fill out the modal window to the side. 
+
+Just like Github, branching happens from the state of your current branch, so be sure that your branching from the right branch!
+
+]
+
+.pull-right[
+
+![SourceTree new branch modal](images/sourcetree-new-branch.png)
+
+]
+
+---
+
+# Branching
+
+Switch between branches using
+
+```sh
+git checkout <branch name>
+```
+
+With SourceTree, this is as simple as double-clicking on the branch name in the "Branches" pane.
+
+---
+
+# Branch Naming
+
+.red[_What are the best practices with branch naming?_]
+
+Generally, I recommend the strategy of "**topic branches**" and a main, default branch. We'll discuss this more in the collaboration workshop, but I recommend doing most of your work in branches that focus on one topic and one topic _only_. This makes it easier to track what you are doing and not get too bogged down in questions like "where did I define this?"
+
+For example, if I'm writing a section on some particular analysis, I would name the branch `some-particular-analysis` (use `lower-kebab-case`).
+
+---
+
+# Branch Naming
+
+.pull-left.font10[
+
+There is a also a naming style that allows you to categorize branches into specific buckets by adding a `<category>/` in the front of your topic branch name.
+
+There are some common categories out there:
+
+- `feature/`: Denoting that this branch is adding something new. In the Data Team, this means we've added new code that adds a new data component.
+- `fix/`: Denoting that this branch is dedicated to fixing something broken.
+- `docs/`: Denoting that this branch is dedicated to adding or changing any project documentation (no code changes).
+
+But you can totally define your own:
+
+- `analysis/`
+- `results/`
+- `discussion/`
+
+And so on. There isn't _really_ that much of a benefit of using this style apart from filtering branches with `git branch | grep <category>` or seeing a folder structure in SourceTree (see right).
+
+]
+
+.pull-right[
+
+![SourceTree branch folders](images/sourcetree-branch-folders.png)
+
+]
+
+---
+class: inverse, center, middle
+
+# .yellow[Activity!]
+
+## Create your own branch and add some commits!
+
+In our next session, we'll learn how to merge these commits into our `main` branch.
+
+---
+class: center, middle
+
+# Questions?
