@@ -19,3 +19,9 @@ Later in the series, we will use these:
 
 - [RStudio](https://www.rstudio.com/products/rstudio/download/): Handy tool to write documents in a versionable way
 - [Zotero](https://www.zotero.org/): Everyone's favorite citation manager!
+
+## Sessions
+
+Here are recordings of our previous sessions:
+
+1. [Introduction & GitHub](https://nyu.zoom.us/rec/share/kkh-oFFYBAc7NlESxiwqCQ2ggV1x8j4PnYiN9XLM_EyjkqTVYOdyCwViNCl0rBnX.8FapkoAfcROODdWU)
