@@ -115,6 +115,35 @@ class: middle, center, inverse
 
 ---
 
+# Series Overview
+
+Over the next series of workshops, I'm going to show you how to use these tools in a fun, collaborative way. Ultimately what I hope for you to take away from this series is this:
+
+- How to use Github on a day-to-day basis
+- How to use git on a day-to-day basis, with a supporting app or on the command line
+- What workflow style would best fit your work needs
+- How to troubleshoot git issues when they come up
+- How to use RMarkdown to create publication-ready manuscripts that can be versioned with git
+
+---
+
+# Agenda
+
+Today, I hope to cover the basics of Github. By the end of the session, I hope that you will be able to:
+
+- Create a new GitHub repository
+- Create a new file on GitHub
+- Understand commits and the commit log
+- Create a fork of a project
+- **Begin to understand git nomenclature** (this will take some time, so don't worry if you don't get it all by the end of this session! We'll keep referring back to these terms)
+
+---
+class: middle, inverse, center
+
+# Let's begin!
+
+---
+
 # What are .red[git] & .red[GitHub]?
 
 .pull-left.definition[
@@ -255,6 +284,11 @@ class: middle
 A process that copies an entire Github project from account `A` to account `B`. Often used in open-source software development setups.
 
 ]
+
+---
+background-image: url('images/branch-vs-fork.png')
+
+# What's the difference between a branch and fork?
 
 ---
 class: inverse, center, middle
