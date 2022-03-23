@@ -1,0 +1,118 @@
+---
+title: Let's Write a Paper!
+output:
+  xaringan::moon_reader:
+    css: 'xaringan-themer.css'
+    seal: false
+    nature:
+      countIncrementalSlides: false
+      highlightLines: true
+      highlightStyle: solarized-light
+      navigation:
+        scroll: false
+params:
+  theme: NULL
+  home: index.html
+---
+class: center, inverse, middle, title-slide
+
+# Let's Write a Paper!
+
+## Part III - Collaboration & Workflow Styles
+
+### Patrick Anker
+
+.ties-footer[
+
+![Global TIES for Children](images/ties-lockup-short-white.png)
+
+]
+
+---
+class: middle, center
+
+## Before we begin...
+
+If you'd like to download any of the materials for this presentation, check out
+
+**>> [the workshop's website](`r params$home`) <<**
+
+### `r "\U1F680"`
+
+---
+
+# Agenda
+
+.pull-left[
+
+So far, we have covered
+
+- Introduction to GitHub & git
+- How to create repos
+- How to manage changes with commits and branches
+- How get changes from and send changes to Github with `git pull` and `git push`
+
+]
+
+.pull-right[
+
+Today, I want to cover:
+
+1. How to merge work from other branches
+1. Different collaboration styles
+1. Issue tracking & commit conventions
+
+]
+
+---
+class: middle, center, inverse
+
+<script src="https://kit.fontawesome.com/8dd08732ee.js" crossorigin="anonymous"></script>
+
+# Merging
+
+## .yellow[<i class="fa fa-code-pull-request"></i>]
+
+---
+
+# Merging
+
+Collaboration is only useful if we are able to combine our work on our different branches. We achieve this using a git **merge**
+
+.definition[
+
+## Merge
+
+A mechanism that takes two (or more) histories and reconciles the differences in a line-wise fashion.
+
+]
+
+We've already used a mechanism that implements a merge before, and that's the **Pull Request** feature on Github! However, Pull Requests are really some nice window dressing around merges, and sometimes it's useful to merge work _outside_ of the context of a Pull Request.
+
+---
+
+# Merging
+
+Consider this example:
+
+.pull-left[
+
+I'm working on a particular section of a report, and things are going swimmingly. However, I noticed that something in your analysis would be very nice to include in my report, but your analysis work was already merged into `main` via a Pull Request. 
+
+How can I get your analysis work into my branch so I can make the changes in my report prior to creating a PR?
+
+]
+
+.pull-right[
+
+![How to get analysis work into my branch?](images/merge1.png)
+
+]
+
+---
+
+# Merging
+
+![with a git merge!](images/merge2.png)
+
+.center[**.red[with a merge commit!]**]

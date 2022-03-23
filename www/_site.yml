@@ -12,6 +12,8 @@ navbar:
           href: 01-intro.html
         - text: "Part II - git"
           href: 02-git.html
+        - text: "Part III - Collaboration & Workflow Styles"
+          href: 03-collaboration.html
   right:
     - icon: fa-github fa-large
       href: https://github.com/nyuglobalties/git-workshops
