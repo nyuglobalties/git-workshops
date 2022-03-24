@@ -113,6 +113,149 @@ How can I get your analysis work into my branch so I can make the changes in my 
 
 # Merging
 
-![with a git merge!](images/merge2.png)
+.center[![with a git merge!](images/merge2.png)]
 
 .center[**.red[with a merge commit!]**]
+
+---
+
+# Merging
+
+.center[![Github also makes a merge commit](images/merge3.png)]
+
+.center[Github also makes a merge commit once a Pull Request is merged.]
+
+---
+
+# Merging
+
+To perform this kind of merge, all you need to do is follow these steps:
+
+.pull-left.font12[
+
+Action | Example
+:------|:--------
+1. Switch to the branch you'd like to merge in | `git checkout main`
+
+]
+
+.pull-right[
+
+![How to merge sync 1: git checkout <source>](images/howto-sync1.png)
+
+]
+
+---
+
+# Merging
+
+To perform this kind of merge, all you need to do is follow these steps:
+
+.pull-left.font12[
+
+Action | Example
+:------|:--------
+1. Switch to the branch you'd like to merge in | `git checkout main`
+2. Download changes to your computer | `git pull`
+
+]
+
+.pull-right[
+
+![How to merge sync 2: git pull](images/howto-sync2.png)
+
+]
+
+---
+
+# Merging
+
+To perform this kind of merge, all you need to do is follow these steps:
+
+.pull-left.font12[
+
+Action | Example
+:------|:--------
+1. Switch to the branch you'd like to merge in | `git checkout main`
+2. Download changes to your computer | `git pull`
+3. Switch back to your branch | `git checkout -`
+
+]
+
+.pull-right[
+
+![How to merge sync 3: git checkout -](images/howto-sync3.png)
+
+]
+
+.footnote.font12[
+
+The `-` is a shortcut for "previous branch". It's just like `cd -` from moving around th Terminal!
+
+]
+
+---
+
+# Merging
+
+To perform this kind of merge, all you need to do is follow these steps:
+
+.pull-left.font12[
+
+Action | Example
+:------|:--------
+1. Switch to the branch you'd like to merge in | `git checkout main`
+2. Download changes to your computer | `git pull`
+3. Switch back to your branch | `git checkout -`
+4. Merge in the changes! | `git merge main`
+
+]
+
+.pull-right[
+
+![How to merge sync 4: git merge main](images/howto-sync4.png)
+
+]
+
+---
+
+# Merging
+
+These steps are the same for command line and for SourceTree:
+
+1. Switch to the branch you'd like to merge in
+1. Download changes to your computer, if they don't already exist
+1. Switch back to your branch
+1. Merge in the changes
+
+.pull-left[
+
+### Command Line 
+
+.font12[
+
+1. `git checkout <target branch>`
+1. `git pull`
+1. `git checkout -`
+1. `git merge <target branch>`
+
+]
+
+.font10[
+
+Note: After running `git merge` you may be thrown into an editor called "vim". Just remember this keystroke sequence and all will be well: `:wq<Enter>`
+
+]
+
+]
+
+.pull-right.font12[
+
+### SourceTree
+
+1. Double-click on the target branch you'd like to merge in
+1. Click "Pull"
+1. Double-click on the branch you're working on
+1. Click "Merge" and then select the commit that has the target branch's name tagged to it
+
+]
