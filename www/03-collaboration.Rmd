@@ -259,3 +259,115 @@ Note: After running `git merge` you may be thrown into an editor called "vim". J
 1. Click "Merge" and then select the commit that has the target branch's name tagged to it
 
 ]
+
+???
+
+- Pause for questions before moving on
+
+---
+class: middle
+
+# The Golden Rule of Merging
+
+> .red[Merge] to bring **someone else's** work **into your** branch; .red[Pull Request] to send **your** work **into someone else's** branch
+
+Adhering to this rule will handle much of complexity and confusion that git can cause. This also creates a great social contract for you and your collaborators: adapt from others to create something new for yourself, ask permission to give back to others.
+
+???
+
+- Moving onto merge conflicts after this, so ask for any questions about merging in general
+
+---
+class: middle, center, inverse
+
+# Merge Conflicts
+
+## .yellow[<i class="fa fa-code-pull-request"></i>] `r "\U1F645"` `r "\U1F62B"`
+
+---
+
+# Merge Conflicts
+
+Even with the best workflow, you will encounter merge conflicts. **And that is okay!** Embrace the merge conflicts. Accept them.
+
+.center[
+
+## .red[<i class="fa fa-spa"></i>]
+
+]
+
+In all seriousness, it is expected that you will encounter merge conflicts if you and your collaborator happen to edit **the same line**. 
+
+.pull-left[
+
+Unlike Box, however, git will tell you where the conflicts arise and guide you on how to resolve them. When you merge something that generates a conflict, you will see this:
+
+]
+
+.pull-right[
+
+```
+>>>>>>> your-current-branch
+text that was in your branch
+...
+=======
+text that was in the other branch
+...
+<<<<<<< branch-youre-merging-in
+```
+
+]
+
+---
+
+# Merge Conflicts
+
+.pull-left[
+
+The merge conflict chunks come in three parts:
+
+1. `>>>>>>> [where you are, often "HEAD"]` followed by the content in your branch
+1. `=======` - a partition between the two content areas
+1. The content from the branch/commit you're merging in followed by `<<<<<<< [what you're merging in]`
+
+]
+
+.pull-right[
+```
+*>>>>>>> your-current-branch
+text that was in your branch
+...
+*=======
+text that was in the other branch
+...
+*<<<<<<< branch-youre-merging-in
+```
+]
+
+---
+
+# Merge Conflicts
+
+.pull-left[
+
+All you need to do is: 
+
+1. Pick the content you want to keep between the two (could be a combination of both!)
+1. **Delete** the lines with `<<<<<<<`, `>>>>>>>`, and `=======`.
+1. Commit the changes!
+
+]
+
+.pull-right[
+
+```
+>>>>>>> your-current-branch
+*text that was in your branch
+*...
+=======
+*text that was in the other branch
+*...
+<<<<<<< branch-youre-merging-in
+```
+
+]
