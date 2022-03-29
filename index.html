@@ -230,51 +230,36 @@ $(document).ready(function () {
 
 
 
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <!-- NOTE: add "navbar-inverse" class for an alternate navbar background -->
+      <button type="button" class="navbar-toggle collapsed navbar-inverse" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a class="navbar-brand navbar-brand-image" href="https://steinhardt.nyu.edu/ihdsc/global-ties"><img src="images/ties-lockup-short-white.png" height="50px" /></a>
       <a class="navbar-brand" href="index.html">Let's Write a Paper</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-    Home
-  </a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-buffer"></span>
-     
-    Slides
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="01-intro.html">Part I - Introduction</a>
-    </li>
-    <li>
-      <a href="02-git.html">Part II - git</a>
-    </li>
-  </ul>
-</li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="slidesDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Slides <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="slidesDropdown">
+            <li><a class="dropdown-item" href="01-intro.html">Part I - Introduction</a></li>
+            <li><a class="dropdown-item" href="02-git.html">Part II - git</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/nyuglobalties/git-workshops">
-    <span class="fa fa-github fa-large"></span>
-     
-  </a>
-</li>
+          <a href="https://github.com/nyuglobalties/git-workshops">
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+        </li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -289,6 +274,7 @@ $(document).ready(function () {
 </div>
 
 
+<p><link rel="stylesheet" href="home.css" /></p>
 <blockquote>
 <p>Welcome to <strong>Let’s Write a Paper</strong>, a collaborative workshop series about using <strong><code>git</code></strong> and <a href="https://github.com"><strong>GitHub</strong></a> for paper writing and other non-code uses! We’ll go over git, GitHub, common workflows, and ultimately how you could write your papers (and other documents) using these tools. No coding experience expected!</p>
 </blockquote>
@@ -306,6 +292,11 @@ $(document).ready(function () {
 <li><a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>: Handy tool to write documents in a versionable way</li>
 <li><a href="https://www.zotero.org/">Zotero</a>: Everyone’s favorite citation manager!</li>
 </ul>
+</div>
+<div id="materials" class="section level2">
+<h2>Materials</h2>
+<p>All of the materials for these slides can be located at <a href="https://github.com/nyuglobalties/git-workshops">this Github repo</a> (octocat icon in the top-right corner!).</p>
+<p>The paper we are collaborating on can be found here: <a href="https://github.com/nyuglobalties/git-workshop-paper">“git-workshop-paper” repo</a>.</p>
 </div>
 <div id="sessions" class="section level2">
 <h2>Sessions</h2>
