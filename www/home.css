@@ -48,3 +48,10 @@ body {
   background: none;
   color: var(--color-navbar-link-hover);
 }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background: none;
+  color: var(--color-navbar-link-hover);
+}

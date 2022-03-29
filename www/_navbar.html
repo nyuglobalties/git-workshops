@@ -12,12 +12,22 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="PageA.html">Page A</a></li>
-        <li><a href="PageB.html">Page B</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="slidesDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Slides <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="slidesDropdown">
+            <li><a class="dropdown-item" href="01-intro.html">Part I - Introduction</a></li>
+            <li><a class="dropdown-item" href="02-git.html">Part II - git</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://github.com">GitHub</a></li>
+        <li>
+          <a href="https://github.com/nyuglobalties/git-workshops">
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+        </li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
