@@ -2,6 +2,8 @@
 title: "Welcome!"
 ---
 
+<link rel="stylesheet" href="home.css" />
+
 > Welcome to **Let's Write a Paper**, a collaborative workshop series about using **`git`** and [**GitHub**](https://github.com) for paper writing and other non-code uses! We'll go over git, GitHub, common workflows, and ultimately how you could write your papers (and other documents) using these tools. No coding experience expected!
 
 This series of workshops is inspired by the amazing [**Git and GitHub for Poets**](https://thecodingtrain.com/beginners/git-and-github/) series by The Coding Train ([Prof. Daniel Shiffman](https://tisch.nyu.edu/about/directory/itp/1984778605) of NYU Tisch ITP). Rather than working on poems, we'll write a (fake) paper together -- leveraging the powers of git and GitHub.
@@ -19,6 +21,12 @@ Later in the series, we will use these:
 
 - [RStudio](https://www.rstudio.com/products/rstudio/download/): Handy tool to write documents in a versionable way
 - [Zotero](https://www.zotero.org/): Everyone's favorite citation manager!
+
+## Materials
+
+All of the materials for these slides can be located at [this Github repo](https://github.com/nyuglobalties/git-workshops) (octocat icon in the top-right corner!).
+
+The paper we are collaborating on can be found here: ["git-workshop-paper" repo](https://github.com/nyuglobalties/git-workshop-paper).
 
 ## Sessions
 
