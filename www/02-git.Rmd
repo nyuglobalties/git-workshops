@@ -507,7 +507,7 @@ class: inverse, center, middle
 
 # .yellow[Activity!]
 
-## Create your own branch and add some commits!
+## Create your own branch and add some commits. Then, _push_ those changes back to your fork on Github!
 
 In our next session, we'll learn how to merge these commits into our `main` branch.
 
