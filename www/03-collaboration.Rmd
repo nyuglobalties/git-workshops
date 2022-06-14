@@ -59,8 +59,8 @@ So far, we have covered
 Today, I want to cover:
 
 1. How to merge work from other branches
-1. Different collaboration styles
-1. Issue tracking & commit conventions
+1. Issue tracking
+1. Different collaboration styles & commit conventions
 
 ]
 
@@ -273,6 +273,40 @@ class: middle
 
 Adhering to this rule will handle much of complexity and confusion that git can cause. This also creates a great social contract for you and your collaborators: adapt from others to create something new for yourself, ask permission to give back to others.
 
+---
+
+# A Tip
+
+### Getting A Single File From Another Branch
+
+Suppose that your collaborator has a file change that you want to adopt, but you don't necessarily want to merge in their entire branch. How do you get it?
+
+.pull-left.font12[
+
+**As far as I know, this is something you can only do with the command line interface**.
+
+You must use the command:
+
+.font10[
+
+```sh
+git checkout <branch name> -- path/to/file.txt
+```
+
+]
+
+An important thing to know is that this operation .red[**overwrites**] your work on that file, avoiding a merge conflict. If you want to merge your work, it would be better to use a merge.
+
+]
+
+.pull-right.font10[
+
+```sh
+git checkout topic -- config/mapping.csv
+```
+
+]
+
 ???
 
 - Moving onto merge conflicts after this, so ask for any questions about merging in general
@@ -371,3 +405,140 @@ All you need to do is:
 ```
 
 ]
+
+---
+class: middle, center, inverse
+
+# Issues
+
+## `r "\U1F5D2"`
+
+---
+
+# Issues
+
+.pull-left[
+
+Issues are a part of Github's project management suite, like tasks on Asana. Each issue has its own number<sup>1</sup> that can be referenced with a pound sign (e.g. **\#5**).
+
+]
+
+.pull-right[
+
+![Screenshot of issue list on Github](images/issue-list.png)
+
+]
+
+.footnote[
+
+[1]: You can refer to Pull Requests using this scheme, too! Pull Requests are just fancy issues.
+
+]
+
+---
+
+# Issues
+
+.pull-left[
+
+If you want to mark a commit as referncing another issue, just put the commit number in the commit message, e.g. `fix bug that would duplicate analysis (#20)`
+
+]
+
+.pull-right[
+
+![Screenshot of Github with issue numbers automatically hyperlinked in a commit message](images/issue-number-reference.png)
+
+]
+
+---
+
+# Why use issues when we have Asana?
+
+This is a practical question that I've tinkered with while working at TIES, and my conclusion for when to use Asana vs. Github issues is as follows:
+
+1. Use Asana for larger project milestones and roadmaps
+1. Use Github issues to track bugs / unexpected behavior
+
+While there are tools to integrate Asana and Github issues, they aren't perfect for both situations. Keeping this division has so far been fairly successful on the Data Team.
+
+---
+class: middle, center, inverse
+
+# Collaboration Styles
+
+## `r "\U1F469\U200D\U1F4BB"` `r "\U1F468\U200D\U1F4BB"`
+
+---
+
+# Collaborating
+
+There are three main collaboration styles with git:
+
+.pull-left.font12[
+
+1. **Shared repository / central backup**
+  1. The most common use style
+  1. Useful for private projects and projects with a few collaborators
+  1. Project leaders need to manage access permissions
+1. **Forking**
+  1. Popular in open source software
+  1. Not great for private repositories / projects
+1. **Peer-to-peer**
+  1. Primarily used by UNIX wizards and folks who don't trust central code repos
+  1. Hard to know which repo is the "live" repo
+
+]
+
+.pull-right[
+
+![Central backup diagram](images/central-backup.png)
+
+![Forking diagram](images/forking.png)
+
+![Peer-to-peer diagram](images/p2p.png)
+]
+
+---
+
+# Collaborating
+
+.pull-left[
+
+**In most cases**, we should be using the "Shared Repository" model for our projects since we mostly want **privacy** and **security**. 
+
+By default, **all _private_ Github** repos are **hidden** on the NYU Global TIES Github org. You will need to add people to have access (I can help with that).
+
+]
+
+.pull-right[
+
+![Central backup diagram](images/central-backup-big.png)
+
+]
+
+---
+
+# Commit Messages
+
+_What makes a good commit message?_ Commit messages are the core description of changes in our git log. You should be able to understand what happened in your repo just by glancing at the log. Remember: this log isn't just for others; this is also for you a couple months or years down the line. These are some suggestions from the wild:
+
+.pull-left.font12[
+
+1. Use imperative case e.g. "remove routine that was crashing OSF lookup"
+1. Be informative and clear with your messages: don't do "update script.do", do "fixed linear regression syntax"
+
+Totally optional, but I highly recommend the [**Conventional Commits**](https://www.conventionalcommits.org/en/v1.0.0-beta.2/) format as some other tools are out there that can help generate changelogs and other documentation automatically from your commit messages.
+
+]
+
+.pull-right[
+
+![Example of decent commit messages](images/git-commits.png)
+
+]
+
+---
+class: middle, center, inverse
+
+# Questions?

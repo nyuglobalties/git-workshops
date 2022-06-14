@@ -38,7 +38,13 @@ rlang::list2(
           ".font12" = list(
             "font-size" = "var(--font12) !important"
           ),
+          ".font12 .remark-code" = list(
+            "font-size" = "var(--font12) !important"
+          ),
           ".font10" = list(
+            "font-size" = "var(--font10) !important"
+          ),
+          ".font10 .remark-code" = list(
             "font-size" = "var(--font10) !important"
           ),
           ".ties-footer" = list(
