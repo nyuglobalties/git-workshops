@@ -289,7 +289,13 @@ h2, h3 {
 .font12 {
   font-size: var(--font12) !important;
 }
+.font12 .remark-code {
+  font-size: var(--font12) !important;
+}
 .font10 {
+  font-size: var(--font10) !important;
+}
+.font10 .remark-code {
   font-size: var(--font10) !important;
 }
 .ties-footer {
